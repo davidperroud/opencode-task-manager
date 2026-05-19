@@ -6,7 +6,7 @@
 set -e
 
 COMMANDS_DIR="$HOME/.config/opencode/commands"
-REPO_URL="https://github.com/YOUR_USERNAME/opencode-task-manager"
+REPO_URL="https://github.com/davidperroud/opencode-task-manager"
 
 echo "Installing OpenCode Task Manager..."
 
