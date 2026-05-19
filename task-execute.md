@@ -46,16 +46,20 @@ Updates status: TODO [ ] → IN_PROGRESS [~] → DONE [x]
 4. If no ID provided (execute all):
    - Find all tasks with status [ ] TODO
    - If none: "No pending tasks. All tasks are completed!"
-   - For each TODO task in order:
-     a. Update to [~] IN_PROGRESS
-     b. Update "Last updated" date
-     c. Commit: "task: start task #<ID>"
-     d. Read the task description
-     e. Execute the task: "Execute this task: <description>"
-     f. After execution, update to [x] DONE
-     g. Add "Completed: <today's date>"
-     h. Update summary counts
-     i. Commit: "task: complete task #<ID>"
+   - CONTINUOUS MODE (default):
+     - Execute all TODO tasks in sequence WITHOUT stopping between them
+     - Only pause if a question arises or clarification is needed
+     - For each TODO task in order:
+       a. Update to [~] IN_PROGRESS
+       b. Update "Last updated" date
+       c. Commit: "task: start task #<ID>"
+       d. Read the task description
+       e. Execute the task: "Execute this task: <description>"
+       f. After execution, update to [x] DONE
+       g. Add "Completed: <today's date>"
+       h. Update summary counts
+       i. Commit: "task: complete task #<ID>"
+       j. Continue immediately to next task (DO NOT ask for confirmation)
    - Show final summary: "All tasks executed. X tasks completed."
 
 5. After any change, run /task-summary to show updated state
